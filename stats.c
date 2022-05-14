@@ -30,7 +30,7 @@ void sortMe(float* inputSet, int setlength)
 
 }
 
-void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stats computedStats)
+void check_and_alert(float maxThreshold, alerter_funcptr alerters[], Stats computedStats)
 {
 
     float numMax = computedStats.max;
@@ -38,8 +38,8 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
     ledAlertCallCount = ledAlerter(numMax, maxThreshold);
 }
 
-struct Stats compute_statistics(const float* numberset, int setlength) {
-    struct Stats s;
+Stats compute_statistics(const float* numberset, int setlength) {
+    Stats s;
     s.average = 0;
     s.min = 0;
     s.max = 0;
