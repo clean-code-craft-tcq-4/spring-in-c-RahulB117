@@ -1,3 +1,5 @@
+#include "alerter.h"
+
 typedef struct
 {
     float average;
