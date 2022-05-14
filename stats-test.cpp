@@ -2,7 +2,7 @@
 
 #include "catch.hpp"
 #include "stats.h"
-#include "alerters.h"
+#include "alerter.h"
 
 #include <stdlib.h>
 #include <math.h>
