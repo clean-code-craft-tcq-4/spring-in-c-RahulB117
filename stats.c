@@ -34,8 +34,8 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], Stats compu
 {
 
     float numMax = computedStats.max;
-    emailAlertCallCount = emailAlerter(numMax, maxThreshold);
-    ledAlertCallCount = ledAlerter(numMax, maxThreshold);
+    emailAlertCallCount = alerters[0](numMax, maxThreshold);
+    ledAlertCallCount = alerters[1](numMax, maxThreshold);
 }
 
 Stats compute_statistics(const float* numberset, int setlength) {
